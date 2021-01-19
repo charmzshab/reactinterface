@@ -6,9 +6,9 @@ class ListAppointments extends Component {
   render() {
     return (
       <div className="appointment-list item-list mb-3">
-        {this.props.appointments.map((item,aptId) => ( 
+        {this.props.appointments.map(item => ( 
            
-          <div className="pet-item col media py-3" key={aptId}>
+          <div className="pet-item col media py-3" key={item.aptId}>
             
             <div className="mr-3">
               <button className="pet-delete btn btn-sm btn-danger"
